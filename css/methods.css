@@ -1,0 +1,70 @@
+#methods {
+    background: radial-gradient(circle at 96% 11%, #2C2C2C 0%, #1A1A1A 60%);
+    padding: 0 5% 30px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.method-block {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 14px 0;
+}
+
+.method-container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: calc(100% - 30px);
+}
+
+.circle {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border-radius: 10px;
+    border: 1px solid #F89D24;
+    align-self: center;
+    box-sizing: border-box;
+}
+
+.circle-container {
+    width: fit-content;
+    height: 100%;
+    width: 30px;
+}
+
+.method-title {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    width: fit-content;
+}
+
+.method-description {
+    font-size: 16px;
+    color: #B5B5B5;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.method-title h3 {
+    margin: 0;
+}
+
+
+@media only screen and (min-width: 893px) {
+    #methods {
+        height: 100vh;
+    }
+    #methods .title {
+        width: 300px;
+        padding-top: 0;
+    }
+    #methods .right {
+        flex-flow: column nowrap;
+        width: calc(60% - 60px);
+        max-width: 600px;
+        padding: 30px;
+    }
+}

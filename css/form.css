@@ -1,0 +1,103 @@
+#my-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(26, 26, 26, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+form {
+    font-family: Lato;
+    height: fit-content;
+    width: 600px;
+    background-color: #232323;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+input {
+    color: #F89D24;
+    padding: 20px 15px;
+    border: 1px solid #F89D24;
+    margin: 8px;
+    border-radius: 5px;
+    width: 328px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #F89D24;
+    font-size: 16px;
+}
+
+label {
+    color: #E1E1E1;
+}
+
+input#termos {
+    outline: 2px solid #006dfc;
+    filter: invert(80%);
+    width: auto;
+    margin-bottom: 50px;
+}
+
+input[type=submit] {
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 18px 10px;
+    border-radius: 5px;
+    width: 230px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 15px 0;
+    background-color: #F89D24;
+    border: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.msg {
+    color: white;
+}
+
+form div span {
+    padding: 0 2px;
+    border-bottom: 1.5px solid #E1E1E1;
+}
+
+form #button {
+    width: 220px;
+    margin: 0;
+}
+
+form img {
+    width: 35px;
+    height: auto;
+    opacity: 0.6;
+}
+
+form a:nth-child(1) {
+    align-self: flex-end;
+}
+
+.form-text {
+    width: 80%;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.input-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}

@@ -1,0 +1,75 @@
+#banner {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    background-color: black;
+    z-index: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 600px;
+}
+
+#banner::before {
+    filter: opacity(33%);
+    content: "";
+    position: absolute;
+    background-image: url("../assets/Grupo 34.svg");
+    background-origin: border-box;
+    background-position: top;
+    z-index: -1;
+    height: 600px;
+    width: 100%;
+}
+
+.banner-text {
+    display: flex;
+    font-size: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    flex-basis: 50%;
+    align-items: center;
+}
+.banner-aside {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F89D24;
+    flex-basis: 50%;
+    color: white;
+    font-size: 60px;
+}
+.banner-aside #button {
+    background-color: white;
+    border: 0;
+    color: #F89D24;
+    padding: 20px 55px;
+    width: fit-content;
+}
+.banner-aside #button:hover {
+    background-color: #cfcfcf;
+}
+
+@media only screen and (min-width: 893px) {
+    #banner {
+        flex-flow: row nowrap;
+        
+    }
+    #banner, #banner::before {
+        height: 372px;
+    }
+    .banner-aside {
+        height: 80%;
+        flex-basis: 35%;
+    }
+    .banner-text {
+        font-size: 60px;
+        flex-basis: 65%;
+    }
+}

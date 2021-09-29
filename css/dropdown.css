@@ -1,0 +1,127 @@
+#dropdown {
+    background: url("../assets/teacher bnw@2x.png") 0% 0% no-repeat padding-box;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0 5% 30px 5%;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 30px 0;
+}
+.menu-item {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #686868;
+    color: white;
+    font-size: 18px;
+    height: 46px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.menu-item:hover {
+    height: 285px;
+    transition: height 0.5s ease;
+}
+.menu-item-title {
+    padding: 15px;
+    font-weight: 200;
+}
+.menu-item:hover .menu-item-title {
+    font-weight: 500;
+}
+.menu-item-inside {
+    padding: 24px 16px;
+    background-color: #262626;
+    border-top: 1px solid #F89D24;
+    border-bottom: 1px solid #F89D24;
+    line-height: 1.7;
+    font-weight: 300;
+    height: 239px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.item-description {
+    display: none;
+}
+
+
+@media only screen and (min-width: 893px) {
+    #dropdown {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 0;
+        background-size: 100% auto;
+        background-color: #1A1A1A;
+        height: 70vh;
+    }
+    #dropdown .flex-container {
+        flex-flow: row nowrap;
+        background-color: pink;
+        height: 360px;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    .menu {
+        background-color: #686868;
+        align-self: center;
+        justify-content: center;
+        height: 100%;
+        flex-basis: 40%;
+    }
+    .menu-item {
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        margin-left: 50px;
+    }
+    .menu-item-title {
+        font-size: 32px;
+    }
+    .menu-item-inside {
+        display: none;
+    }
+    .menu-item:hover {
+        height: 80px;
+        transition: none;
+        border-bottom: 1px solid #F89D24;
+    }
+    .item-description {
+        padding: 0 123px;
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 100%;
+        background-color: #262626;
+        flex-basis: 60%;
+        font-weight: 300;
+        color: white;
+        line-height: 1.6;
+        font-size: 18px;
+        align-self: center;
+    }
+    .description-buttons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 14px 0 0 0;
+        font-weight: bold;
+    }
+    .description-buttons .second-button {
+        color: #F89D24;
+        margin-left: 25px;
+    }
+    #dropdown .title, #dropdown .square {
+        display: none;
+    }
+    #dropdown .bottom {
+        display: none;
+    }
+}
