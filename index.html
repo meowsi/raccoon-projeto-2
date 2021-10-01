@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="./css/banner.css">
         <link rel="stylesheet" href="./css/dropdown.css">
         <link rel="stylesheet" href="./css/teacher.css">
-        <link rel="stylesheet" href="./css/quotes.css">
+        <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/methods.css">
         <link rel="stylesheet" href="./css/persona.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/form.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -218,13 +219,35 @@
         </section>
 
 
-        <section id="quotes">
-            <div class="quotes-container">
+        <section class="carousel">
+            
+            <div>
+                <div class="quotes-container">
                 "Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"
+                </div>
+                <div class="quotes-subtitle">
+                    <h3>fulano de tal,<br>médico muito conceituado</h3>
+                </div>
             </div>
-            <div class="quotes-subtitle">
-                <h3>fulano de tal,<br>médico muito conceituado</h3>
+            
+            <div>
+                <div class="quotes-container">
+                "Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"
+                </div>
+                <div class="quotes-subtitle">
+                    <h3>sicrano,<br>engenheiro muito conceituado</h3>
+                </div>
             </div>
+
+            <div>
+                <div class="quotes-container">
+                "Quando eu fiz esse curso, eu fui muito feliz e eu quero fazer de novo agora porque é muito bom mesmo"
+                </div>
+                <div class="quotes-subtitle">
+                    <h3>beltrano,<br>programador muito conceituado</h3>
+                </div>
+            </div>
+
         </section>
 
 
@@ -351,7 +374,7 @@
                     <input id="name" type="text" placeholder="Nome">
                     <input id="tel" type="text" placeholder="Telefone">
                     <input id="email" type="text" placeholder="E-mail">
-                    <input id="profession" type="text" placeholder="Profissão">
+                    <input id="cpf" type="text" placeholder="CPF">
                     <div>
                         <input type="checkbox" id="termos">
                         <label for="termos">Li e aceito os <span>termos de uso</span>.</label>
@@ -362,7 +385,19 @@
             </form>
         </section>
 
-        <script src="main.js"></script>
+        <script src="script/form.js"></script>
+        <script src="script/mask.js"></script>
+        <script src="script/submit.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('.carousel').slick({
+                });
+            });
+        </script>
     </body>
 
 
