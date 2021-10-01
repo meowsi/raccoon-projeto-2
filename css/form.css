@@ -65,6 +65,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+input[type=submit]:hover {
+    background-color: #976320;
+}
+
 .msg {
     margin-top: 40px;
     color: white;
@@ -73,11 +77,6 @@ input[type=submit] {
 form div span {
     padding: 0 2px;
     border-bottom: 1.5px solid #E1E1E1;
-}
-
-form #button {
-    width: 220px;
-    margin: 0;
 }
 
 form img {
