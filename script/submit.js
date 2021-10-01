@@ -1,5 +1,5 @@
 const API = "";
-const myForm = document.querySelector('#my-form');
+const myForm = document.querySelector('.my-form');
 const msg = document.querySelector('.msg');
 
 myForm.addEventListener('submit', onSubmit);

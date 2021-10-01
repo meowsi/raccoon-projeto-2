@@ -1,18 +1,16 @@
 const openForm = document.querySelectorAll('#button.black');
 const closeForm = document.querySelector('form a');
-const form = document.querySelector('#my-form');
+const form = document.querySelector('.my-form');
 
 for (let i = 0; i < openForm.length; i++) {
     openForm[i].addEventListener('click', e => {
         e.preventDefault();
-    
         form.style.display = 'flex';
     })
 }
 
 closeForm.addEventListener('click', e => {
     e.preventDefault();
-    
     form.style.display = 'none';
 })
 

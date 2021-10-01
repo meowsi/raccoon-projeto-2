@@ -118,7 +118,7 @@
         color: #F89D24;
         margin-left: 25px;
     }
-    .dropdown .title, #dropdown .square {
+    .dropdown .title, .dropdown .square {
         display: none;
     }
     .dropdown .bottom {
