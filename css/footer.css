@@ -1,4 +1,4 @@
-#footer {
+.footer {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -20,7 +20,7 @@
 }
 
 @media only screen and (min-width: 893px) {
-    #footer {
+    .footer {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: flex-start;
@@ -32,7 +32,7 @@
         width: 480px;
         justify-content: space-between;
     }
-    #footer .extra {
+    .footer .extra {
         display: none;
     }
     .footer-left {

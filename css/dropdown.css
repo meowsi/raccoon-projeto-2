@@ -1,4 +1,4 @@
-#dropdown {
+.dropdown {
     background: url("../assets/teacher bnw@2x.png") 0% 0% no-repeat padding-box;
     height: fit-content;
     margin: 0 auto;
@@ -49,7 +49,7 @@
 
 
 @media only screen and (min-width: 893px) {
-    #dropdown {
+    .dropdown {
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -58,7 +58,7 @@
         background-color: #1A1A1A;
         height: 70vh;
     }
-    #dropdown .flex-container {
+    .dropdown .flex-container {
         flex-flow: row nowrap;
         background-color: pink;
         height: 360px;
@@ -118,10 +118,10 @@
         color: #F89D24;
         margin-left: 25px;
     }
-    #dropdown .title, #dropdown .square {
+    .dropdown .title, #dropdown .square {
         display: none;
     }
-    #dropdown .bottom {
+    .dropdown .bottom {
         display: none;
     }
 }

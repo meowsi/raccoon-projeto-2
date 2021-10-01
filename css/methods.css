@@ -1,5 +1,4 @@
-#methods {
-    background: radial-gradient(circle at 96% 11%, #2C2C2C 0%, #1A1A1A 60%);
+.methods {
     padding: 0 5% 30px 5%;
     display: flex;
     justify-content: center;
@@ -54,14 +53,14 @@
 
 
 @media only screen and (min-width: 893px) {
-    #methods {
+    .methods {
         height: 100vh;
     }
-    #methods .title {
+    .methods .title {
         width: 300px;
         padding-top: 0;
     }
-    #methods .right {
+    .methods .right {
         flex-flow: column nowrap;
         width: calc(60% - 60px);
         max-width: 600px;

@@ -1,4 +1,4 @@
-#banner {
+.banner {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -12,7 +12,7 @@
     height: 600px;
 }
 
-#banner::before {
+.banner::before {
     filter: opacity(33%);
     content: "";
     position: absolute;
@@ -57,11 +57,11 @@
 }
 
 @media only screen and (min-width: 893px) {
-    #banner {
+    .banner {
         flex-flow: row nowrap;
         
     }
-    #banner, #banner::before {
+    .banner, .banner::before {
         height: 372px;
     }
     .banner-aside {

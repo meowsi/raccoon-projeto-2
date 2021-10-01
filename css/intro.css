@@ -1,8 +1,7 @@
-#intro {
+.intro {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background: radial-gradient(circle at 96% 11%, #2C2C2C 0%, #1A1A1A 60%);
     text-align: center;
     margin: 0 auto;
     padding: 0 10%;
@@ -37,7 +36,7 @@
         height: 72px;
         margin: 50px;
     }
-    #intro {
+    .intro {
         padding: 0 20%;
     }
     .intro-subtitle {
@@ -48,7 +47,7 @@
         font-size: 60px;
     }
 
-    #intro .bottom {
+    .intro .bottom {
         width: 390px;
     }
 }

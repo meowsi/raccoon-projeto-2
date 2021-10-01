@@ -104,6 +104,9 @@ h3 {
     max-width: 390px;
     margin: 0 auto;
 }
+.intro, .teacher, .about, .methods {
+    background: radial-gradient(circle at 96% 11%, #2C2C2C, #1A1A1A);
+}
 
 
 @media only screen and (min-width: 893px) {
@@ -115,10 +118,10 @@ h3 {
         height: 205px;
         left: 10%;
     }
-    #methods .flex-container {
+    .methods .flex-container {
         height: 700px;
     }
-    #methods .flex-container, #about .flex-container {
+    .methods .flex-container, .about .flex-container {
         flex-flow: column wrap;
         width: 100%;
         max-width: 1200px;

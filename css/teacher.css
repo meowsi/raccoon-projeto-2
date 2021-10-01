@@ -1,34 +1,33 @@
-#teacher {
-    background: radial-gradient(circle at 96% 11%, #2C2C2C 0%, #1A1A1A 60%);
+.teacher {
     height: fit-content;
     margin: 0 auto;
     padding: 0 10% 50px 10%;
 }
 
-#teacher .flex-container {
+.teacher .flex-container {
     justify-content: center;
     padding: 5% 0;
 }
 
-#teacher .block img {
+.teacher .block img {
     width: 100%;
 }
 
-#teacher .flex-container .block:nth-child(n + 4) {
+.teacher .flex-container .block:nth-child(n + 4) {
     display: none;
 }
 
 @media only screen and (min-width: 893px) {
-    #teacher .flex-container .block:nth-child(n + 4) {
+    .teacher .flex-container .block:nth-child(n + 4) {
         display: block;
     }
-    #teacher .title {
+    .teacher .title {
         padding-top: 125px !important;
     }
 }
 
 @media only screen and (min-width: 1080px) {
-    #teacher .block {
+    .teacher .block {
         width: 25%;
         max-width: 380px;
     }

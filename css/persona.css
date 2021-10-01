@@ -1,4 +1,4 @@
-#persona {
+.persona {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -11,9 +11,9 @@
 
 
 @media only screen and (min-width: 893px) {
-    #persona {
+    .persona {
         background: url("../assets/negociando@2x.png") left / 65% 100%,
-                    radial-gradient(circle at 96% 11%, #2C2C2C 0%, #1A1A1A 70%) right / 48% 100%,
+                    radial-gradient(circle at 96% 11%, #2C2C2C, #1A1A1A) right / 48% 100%,
                     rgba(26, 26, 26, 1);
         background-repeat: no-repeat;
         background-blend-mode: luminosity, normal;
@@ -24,26 +24,26 @@
         align-content: right;
         box-sizing: border-box;
     }
-    #persona .square {
+    .persona .square {
         left: auto;
         right: 5%;
     }
-    #persona .flex-container {
+    .persona .flex-container {
         align-self: right;
         flex-flow: column nowrap;
         align-items: flex-end;
         justify-content: space-around;
     }
-    #persona .title, #persona .desc, #persona .bottom {
+    .persona .title, .persona .desc, .persona .bottom {
         width: 40%;
         margin: 0;
         align-self: flex-end;
     }
-    #persona .bottom {
+    .persona .bottom {
         min-width: 40%;
         justify-content: center;
     }
-    #persona #button {
+    .persona #button {
         margin: 14px;
     }
 }
